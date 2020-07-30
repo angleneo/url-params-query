@@ -1,0 +1,11 @@
+{
+  "name": "url-params-query",
+  "version": "1.0.3",
+  "description": "A toolkit for getting URL parameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "angleneo",
+  "license": "ISC"
+}
