@@ -1,7 +1,4 @@
 export function query (name) {
-  if (process.server) {
-    return
-  }
   let query = window.location.search.substring(1);
   let oUrl = window.location.href.toString();
   let vars = []
@@ -19,14 +16,20 @@ export function query (name) {
 }
 
 export function setQuery (url, paramName, replaceVal) {
-  if (process.server) {
-    return
-  }
   let oUrl = url.toString();
   let index = oUrl.indexOf(`?${paramName}`)
   let re = eval('/(&' + paramName + '=)([^&]*)/gi');
 
   if (!replaceVal) {
+    if (index > -1) {
+      if (getQueryName().length > 1) {
+        clearQuery()
+        window.location.reload()
+        return
+      }
+      clearQuery()
+      return
+    }
     let url1 = oUrl.replace(re, '');
     window.history.replaceState('', '', url1)
     return
@@ -50,9 +53,6 @@ export function setQuery (url, paramName, replaceVal) {
 }
 
 export function getQueryName () {
-  if (process.server) {
-    return
-  }
   let query = window.location.search.substring(1);
   let vars = query.split("&");
   let arr = []
@@ -64,9 +64,6 @@ export function getQueryName () {
 }
 
 export function clearQuery () {
-  if (process.server) {
-    return
-  }
   let url = window.location.href;
   if (url.indexOf("?") != -1) {
     url = url.replace(/(\?|#)[^'"]*/, '');
