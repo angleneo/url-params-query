@@ -35,3 +35,5 @@ you can use like this to add params query:
 `clearQuery()`
 
 If your url is `https://xxx/xxx?time=2020&name=abc&age=20`, after you use this function , it can clear all params, url becomes `https://xxx/xxx`.
+
+If you think the tool is good, please go to https://github.com/angleneo/url-params-query and give me a star ^_^
