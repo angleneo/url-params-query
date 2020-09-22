@@ -7,8 +7,10 @@ import { query } from 'url-params-query';
 If url is `https://xxx/xxx?time=2020&name=abc&age=20` ,then you can use `query("time")` or `query("name")` to get time value and name value.
 
 for example:
+```
 let time = query("time")
 console.log(time) // "2020"
+```
 
 ## function setQuery
 import { setQuery } from 'url-params-query';
@@ -19,9 +21,11 @@ you can use like this to add params query:
 You can see that the URL becomes `https://xxx/xxx?time=2020-07-07`, if params has alread exists, it can replace value.
 
 for example:
-`setQuery('localhost:3000', "time", "2020-09-09") // localhost:3000?time=2020-09-09`
-`setQuery('localhost:3000', "time", "2020-10-01")`
-`console.log(location.href) // http://localhost:3000?time=2020-10-01`
+```
+setQuery('localhost:3000', "time", "2020-09-09") // localhost:3000?time=2020-09-09
+setQuery('localhost:3000', "time", "2020-10-01")
+console.log(location.href) // http://localhost:3000?time=2020-10-01
+```
 
 ## function getQueryName
 import { getQueryName } from 'url-params-query';
@@ -32,8 +36,10 @@ you can use like this to add params query:
 If your url is `https://xxx/xxx?time=2020&name=abc&age=20`, it can return an array, `["time", "name", "age"]`
 
 for example:
-`let arr = getQueryName();`
-`console.log(arr) // ["time", "name", "age"]`
+```
+let arr = getQueryName();
+console.log(arr) // ["time", "name", "age"]
+```
 
 ## function clearQuery
 import { clearQuery } from 'url-params-query';
@@ -45,8 +51,10 @@ you can use like this to delete params query:
 If your url is `https://xxx/xxx?time=2020&name=abc&age=20`, after you use this function , it can clear all params, url becomes `https://xxx/xxx`.
 
 for example:
-`clearQuery();`
-`console.log(location.href) // localhost:3000`
+```
+clearQuery();
+console.log(location.href) // localhost:3000
+```
 
 If you think the tool is good, please go to https://github.com/angleneo/url-params-query and give me a star ^_^
 
@@ -60,8 +68,10 @@ import { query } from 'url-params-query';
 如果url是: `https://xxx/xxx?time=2020&name=abc&age=20`, 你可以使用 `query("time")` 或者 `query("name")` 来获取他们后面的值。
 
 for example:
-`let time = query("time")`
-`console.log(time) // "2020"`
+```
+let time = query("time")
+console.log(time) // "2020"
+```
 
 ## function setQuery
 import { setQuery } from 'url-params-query';
@@ -72,9 +82,11 @@ import { setQuery } from 'url-params-query';
 你可以看到url变为`https://xxx/xxx?time=2020-07-07`, 如果参数的值再次赋值, 它可以替换当前的值。
 
 for example:
-`setQuery('localhost:3000', "time", "2020-09-09") // localhost:3000?time=2020-09-09`
-`setQuery('localhost:3000', "time", "2020-10-01")`
-`console.log(location.href) // http://localhost:3000?time=2020-10-01`
+```
+setQuery('localhost:3000', "time", "2020-09-09") // localhost:3000?time=2020-09-09
+setQuery('localhost:3000', "time", "2020-10-01")
+console.log(location.href) // http://localhost:3000?time=2020-10-01
+```
 
 ## function getQueryName
 import { getQueryName } from 'url-params-query';
@@ -85,8 +97,10 @@ import { getQueryName } from 'url-params-query';
 它会返回一个数组, 里面包含当前的参数,`["time", "name", "age"]`
 
 for example:
-`let arr = getQueryName();`
-`console.log(arr) // ["time", "name", "age"]`
+```
+let arr = getQueryName();
+console.log(arr) // ["time", "name", "age"]
+```
 
 ## function clearQuery
 import { clearQuery } from 'url-params-query';
@@ -98,7 +112,9 @@ import { clearQuery } from 'url-params-query';
 使用了这个方法后,会删除掉url后面的所有参数,url会变为 `https://xxx/xxx`。
 
 for example:
-`clearQuery();`
-`console.log(location.href) // localhost:3000`
+```
+clearQuery();
+console.log(location.href) // localhost:3000
+```
 
 如果你觉得这个工具还不错能帮得上你, 可以去 https://github.com/angleneo/url-params-query 给我一颗星好咩^-^
