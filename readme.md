@@ -2,7 +2,9 @@
 You can run  `npm i url-params-query` to set up . All operations are not logged to history.
 
 ## function query
+```
 import { query } from 'url-params-query';
+```
 
 If url is `https://xxx/xxx?time=2020&name=abc&age=20` ,then you can use `query("time")` or `query("name")` to get time value and name value.
 
@@ -13,7 +15,9 @@ console.log(time) // "2020"
 ```
 
 ## function setQuery
+```
 import { setQuery } from 'url-params-query';
+```
 
 you can use like this to add params query:
 `setQuery(url, "time", "2020-07-07")`
@@ -28,7 +32,9 @@ console.log(location.href) // http://localhost:3000?time=2020-10-01
 ```
 
 ## function getQueryName
+```
 import { getQueryName } from 'url-params-query';
+```
 
 you can use like this to add params query:
 `getQueryName()`
@@ -42,7 +48,9 @@ console.log(arr) // ["time", "name", "age"]
 ```
 
 ## function clearQuery
+```
 import { clearQuery } from 'url-params-query';
+```
 
 you can use like this to delete params query:
 
@@ -63,7 +71,9 @@ If you think the tool is good, please go to https://github.com/angleneo/url-para
 这是一个url参数工具箱，你可以用来操作url中的参数而且不会记录在history中,通常会应用在筛选功能中,改变url但是页面不做跳转,可以很方便的回退和分享url出去。
 
 ## function query
+```
 import { query } from 'url-params-query';
+```
 
 如果url是: `https://xxx/xxx?time=2020&name=abc&age=20`, 你可以使用 `query("time")` 或者 `query("name")` 来获取他们后面的值。
 
@@ -74,7 +84,9 @@ console.log(time) // "2020"
 ```
 
 ## function setQuery
+```
 import { setQuery } from 'url-params-query';
+```
 
 你可以使用`setQuery`方法来向url添加值,如下:
 `setQuery(url, "time", "2020-07-07")`
@@ -89,7 +101,9 @@ console.log(location.href) // http://localhost:3000?time=2020-10-01
 ```
 
 ## function getQueryName
+```
 import { getQueryName } from 'url-params-query';
+```
 
 你可以这样使用来获取当前所有参数列表
 `getQueryName()`
@@ -103,7 +117,9 @@ console.log(arr) // ["time", "name", "age"]
 ```
 
 ## function clearQuery
+```
 import { clearQuery } from 'url-params-query';
+```
 
 你可以这样使用来清除所有参数和值
 
