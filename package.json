@@ -1,6 +1,6 @@
 {
   "name": "url-params-query",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A toolkit for getting URL parameters",
   "main": "index.js",
   "scripts": {
