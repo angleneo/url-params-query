@@ -1,4 +1,4 @@
-## This is a url params too toolkit.
+## This is a url params toolkit.
 You can run  `npm i url-params-query` to set up . All operations are not logged to history.
 
 ## function query
